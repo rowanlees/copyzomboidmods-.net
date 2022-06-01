@@ -18,7 +18,7 @@ namespace copyzomboidmods
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
                     workshopDirectory = fbd.SelectedPath;
-                    System.Windows.Forms.MessageBox.Show("Chosen directory: " + workshopDirectory, "Message");
+                    System.Windows.Forms.MessageBox.Show("Chosen source directory: " + workshopDirectory, "Message");
                 }
             }
 
@@ -33,7 +33,7 @@ namespace copyzomboidmods
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
                     zomboidModsDirectory = fbd.SelectedPath;
-                    System.Windows.Forms.MessageBox.Show("Chosen directory: " + zomboidModsDirectory, "Message");
+                    System.Windows.Forms.MessageBox.Show("Chosen destination directory: " + zomboidModsDirectory, "Message");
                 }
             }
         }
