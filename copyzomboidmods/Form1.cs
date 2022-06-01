@@ -49,7 +49,10 @@ namespace copyzomboidmods
                 var workshopModFolders = Directory.GetDirectories(workshopDirectory);
                 foreach (var workshopModFolder in workshopModFolders)
                 {
-                    if(Directory.GetDirectories(workshopModFolder).Contains("mods"))
+                    var result = Directory.GetDirectories(workshopModFolder);
+                    System.Windows.Forms.MessageBox.Show("Found folders: " + String.Join(", ", result), "Messsage");
+                    System.Windows.Forms.MessageBox.Show("Does folder contain mods folder: " + Directory.GetDirectories(workshopModFolder).Contains("mods"), "Message");
+                    if (Directory.GetDirectories(workshopModFolder).Contains("mods"))
                     {
                         string directory = workshopModFolder + "/mods";
                         var modFoldersToExtract = Directory.GetDirectories(directory);
