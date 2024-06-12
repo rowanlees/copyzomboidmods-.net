@@ -1,4 +1,4 @@
-# copyzomboidmods
+# copyzomboidmods-.net
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
